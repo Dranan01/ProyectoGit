@@ -41,7 +41,7 @@ public class Project4 {
             pt2 = new Point(2, 8);
             pt3 = new Point(12, 2);
             Triangle triangle_2 = new Triangle(pt1, pt2, pt3);
-            Triangle triangle_3 = new Triangle(triangle_2);  // invokes the copy constructor
+            Triangle triangle_3 = new Triangle(triangle_2);  //llama al constructor copia
 
             triangle_2.setPoint2(new Point(5,8));
             myShapes.add(triangle_1);
@@ -71,7 +71,7 @@ public class Project4 {
             Sphere sphere_1, sphere_2, sphere_3;
             sphere_1 = new Sphere(4);
             sphere_2 = new Sphere(12);
-            sphere_3 = new Sphere(sphere_1);  // invokes the copy constructor
+            sphere_3 = new Sphere(sphere_1);  //llama al constructor copia
             sphere_3.setRadius(5);
             myShapes.add(sphere_1);
             myShapes.add(sphere_2);
@@ -80,7 +80,7 @@ public class Project4 {
             Cube cube_1, cube_2, cube_3;
             cube_1 = new Cube(4);
             cube_2 = new Cube(12);
-            cube_3 = new Cube(cube_1);  // invokes the copy constructor
+            cube_3 = new Cube(cube_1);  //llama al constructor copia
             cube_3.setSideLength(5);
             myShapes.add(cube_1);
             myShapes.add(cube_2);
@@ -89,7 +89,7 @@ public class Project4 {
             Cylinder cy1, cy2, cy3;
             cy1 = new Cylinder(4, 10);
             cy2 = new Cylinder(7, 12);
-            cy3 = new Cylinder(cy2);   // invokes the copy constructor);
+            cy3 = new Cylinder(cy2);   //llama al constructor copia
             cy3.setHeight(15);
             cy3.setRadius(10);
             myShapes.add(cy1);
@@ -100,26 +100,26 @@ public class Project4 {
             Cone cone_1, cone_2, cone_3;
             cone_1 = new Cone(4, 10);
             cone_2 = new Cone(7, 12);
-            cone_3 = new Cone(cone_1);  // invokes the copy constructor
+            cone_3 = new Cone(cone_1);  //llama al constructor copia
             cone_3.setHeight(15);
             cone_3.setRadius(10);
             myShapes.add(cone_1);
             myShapes.add(cone_2);
             myShapes.add(cone_3);
 
-            for (Shape s: myShapes) {  // using for-each loop
+            for (Shape s: myShapes) {  // uso por cada vuelta 
                 // for (int ii = 0; ii < myShapes.size(); ii++) {
-                out.println(s.getClass().getName());  // prints the class name the object belongs to
-                s.print(out);             // dynamic binding
+                out.println(s.getClass().getName());  // imprime el nombre de la clase del objeto
+                s.print(out);             
                 out.println();
             }
             out.close();
-        }  // end of try
+        }  // fin del try
 
         catch(Exception e){
             System.out.println(e.getMessage());
             e.printStackTrace();
             System.exit(0);
-        }  // end of catch
-    } // end of main
-}  // end of Project4
+        }  //fin del catch
+    } 
+}  
