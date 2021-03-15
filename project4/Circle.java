@@ -9,12 +9,16 @@ import java.io.PrintWriter;
  */
 
 public class Circle  extends TwoDimensionalShape{
-    //instance variables radius and center
+   /**
+    * Instanciacion de los atributos radius y center
+    */
     private double  radius ;
     private Point center;
 
     /**
-     * The default constructor which takes doubles and point initializes the radius and center. 
+     * Constructor de circulo que toma por argumento un Point y un double
+     * @param center
+     * @param radius 
      */
     public Circle( Point center,double radius) 
     {
@@ -24,7 +28,7 @@ public class Circle  extends TwoDimensionalShape{
     
     
     /**
-     * This constructor is same as define above. 
+     * Constructor copia
      */
     public Circle(Circle circle)
     {
@@ -34,8 +38,8 @@ public class Circle  extends TwoDimensionalShape{
 
     
     /**
-     * It gets the value of radius.
-     * @return the value of radius.
+     * recoge el valor del radio
+     * @return el valor del radio
      */
     public double getRadius() 
     {
@@ -45,7 +49,7 @@ public class Circle  extends TwoDimensionalShape{
     
     
     /**
-     * It sets the value of radius.
+     * Le da un valor a radius
      */
     public void setRadius(double radius) 
     {
@@ -54,8 +58,8 @@ public class Circle  extends TwoDimensionalShape{
 
     
     /**
-     * It gets the value of center.
-     * @return the value of center.
+     * Muestra el valor de centerIt gets the value of center.
+     * @return el valor de center
      */
     public Point getCenter() 
     {
@@ -65,7 +69,8 @@ public class Circle  extends TwoDimensionalShape{
     
     
     /**
-     * It sets the value of center.
+     * Guarda el valor de center.
+     * @param center 
      */
     public void setCenter(Point center) 
     {
@@ -75,7 +80,8 @@ public class Circle  extends TwoDimensionalShape{
     
     
     /**
-     * This is a printwriteout overridden method which prints the circle object.
+     * Metodo Override que imprime los atribus del objeto circulo
+     * @param out 
      */
     @Override
     public void print(PrintWriter out) 
@@ -91,7 +97,8 @@ public class Circle  extends TwoDimensionalShape{
 
     
     /**
-     * This is an overridden method which gets the area.
+     * Metodo Override que devuelve el area.
+     * @return 
      */
     @Override
     public double getArea() 
@@ -101,7 +108,8 @@ public class Circle  extends TwoDimensionalShape{
 
     
     /**
-     * This is an overridden method which gets the radius.
+     * Metodo Overrida que devuelve el radio.
+     * @return 
      */
     @Override
     public double getPerimeter() {
