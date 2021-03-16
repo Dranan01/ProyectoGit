@@ -2,24 +2,32 @@
 import java.io.PrintWriter;
 
 /**
- * This is a Triangle class which is TwoDimention shape.
- * It represents three corner points which are point objects.
+ * La clase Triangle representa un triangulo de dos dimensiones.
+ * Usa 3 Points como vertices del triangulo.
  * 
  * @author Pratik Patel
- * @version 1  Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 
 class Triangle extends TwoDimensionalShape {
 
-    //instance variables point1, point2 and point3
+    /**
+     * Creacion de las variables point1,point2,point3
+     */
     private Point point1, point2, point3;
 
+    /**
+     * Constructor vacio
+     */
     public Triangle() {
     }
 
     
     /**
-     * The default constructor which takes points and define them. 
+     * Constructor predeterminado que tomar por parametro 3 Points.
+     * @param pt1
+     * @param py2
+     * @param py3 
      */
     public Triangle(Point pt1, Point py2, Point py3) 
     {
@@ -31,7 +39,8 @@ class Triangle extends TwoDimensionalShape {
     
     
     /**
-     * This constructor is same as define above. 
+     * Constructor copia
+     * @param t 
      */
     public Triangle(Triangle t) 
     {
@@ -43,8 +52,8 @@ class Triangle extends TwoDimensionalShape {
     
     
     /**
-     * It gets the value of point1.
-     * @return the value of point1.
+     * Devuelve el valor de point1
+     * @return el valor de point1.
      */
     public Point getPoint1() 
     {
@@ -52,7 +61,8 @@ class Triangle extends TwoDimensionalShape {
     }
 
     /**
-     * It sets the value of point1.
+     * Establece el valor de point1
+     * @param point1 
      */
     public void setPoint1(Point point1) 
     {
@@ -61,8 +71,8 @@ class Triangle extends TwoDimensionalShape {
 
     
     /**
-     * It gets the value of point2.
-     * @return the value of point2.
+     * Devuelve el valor de point2
+     * @return el valor de point2.
      */
     public Point getPoint2() 
     {
@@ -70,8 +80,10 @@ class Triangle extends TwoDimensionalShape {
     }
 
     
+    
     /**
-     * It sets the value of point2.
+     * Establece el valor de point2
+     * @param point2 
      */
     public void setPoint2(Point point2) 
     {
@@ -81,8 +93,8 @@ class Triangle extends TwoDimensionalShape {
     
     
     /**
-     * It gets the value of point3.
-     * @return the value of point3.
+     * Devuelve el valor de point3.
+     * @return el valor de point3.
      */
     public Point getPoint3()
     {
@@ -90,7 +102,7 @@ class Triangle extends TwoDimensionalShape {
     }
 
     /**
-     * It sets the value of point3.
+     * Establece el valor de point3.
      */
     public void setPoint3(Point point3) 
     {
@@ -99,7 +111,8 @@ class Triangle extends TwoDimensionalShape {
 
     
     /**
-     * This is a printwriteout overridden method which prints the Triangle object.
+     * Metodo sobreescrito que usa un PrintWriter para imprimir el objeto Cono
+     * @param out 
      */
     @Override
     public void print(PrintWriter out) 
@@ -116,7 +129,8 @@ class Triangle extends TwoDimensionalShape {
 
     
     /**
-     * This is an overridden method which gets the area.
+     * Metodo sobreescrito que devuelve el valor del area
+     * @return 
      */
     @Override
     public double getArea() 

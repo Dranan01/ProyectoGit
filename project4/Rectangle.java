@@ -1,24 +1,32 @@
 
 import java.io.PrintWriter;
 /**
- * The rectangle class represent the lenght and width. 
+ * La clase Rectangle representa un rectangulo por su longitud y su ancho. 
  * 
  * @author Pratik Patel
- * @version 1   Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 
  class Rectangle  extends TwoDimensionalShape{
 
-     //instance variables length and width. both are doubles.
+     /**
+      * Creacion de las variables length y width
+      */
      double length;  
      double width;   
      
+     /**
+      * Constructor vacio de Rectangle
+      */
     public Rectangle() {
     }
 
     
+    
     /**
-     * The default constructor which takes two doubles and initializes the length and width. 
+     * Constrcutor predeterminado de Rectangle que toma length y width por parametros
+     * @param length
+     * @param width 
      */
     public Rectangle(double length, double width)
     {
@@ -28,7 +36,7 @@ import java.io.PrintWriter;
      
      
     /**
-     * This constructor is same as define above. 
+     * Constructor copia de Rectangle
      */
     public Rectangle(Rectangle rect)
     {
@@ -38,8 +46,8 @@ import java.io.PrintWriter;
 
     
     /**
-     * It gets the value of length.
-     * @return the value of length.
+     * Devuelve el valor de length.
+     * @return el valor de length.
      */
     public double getLength() 
     {
@@ -49,7 +57,7 @@ import java.io.PrintWriter;
     
     
     /**
-     * It sets the value of height.
+     * Establece el valor de length.
      */
     public void setHeight(double length) 
     {
@@ -59,8 +67,8 @@ import java.io.PrintWriter;
     
 
     /**
-     * It gets the value of width.
-     * @return the value of width.
+     * Devuelve el valor de width.
+     * @return el valor de width.
      */
     public double getWidth() 
     {
@@ -69,7 +77,7 @@ import java.io.PrintWriter;
 
     
     /**
-     * It sets the value of width.
+     * Establece el valor de width.
      */
     public void setWidth(double width) 
     {
@@ -78,8 +86,10 @@ import java.io.PrintWriter;
     
 
     
+    
     /**
-     * This is a printwriteout overridden method which prints the Rectangle object.
+     * Metodo sobreescrito que usa PrintWriter para mostrar el objeto Rectangle
+     * @param out 
      */
     @Override
     public void print(PrintWriter out) 
@@ -96,7 +106,8 @@ import java.io.PrintWriter;
     
     
     /**
-     * This is an overridden method which gets the area.
+     * Metodo sobreescrito que devuelve el valor del area
+     * @return 
      */
     @Override
     public double getArea() 
@@ -106,8 +117,10 @@ import java.io.PrintWriter;
     
     
 
+    
     /**
-     * This is an overridden method which gets the Perimeter.
+     * Metodo sobreescrito que devuelve el valor del perimetro
+     * @return 
      */
     @Override
     public double getPerimeter() 
@@ -117,8 +130,10 @@ import java.io.PrintWriter;
     
     
     
+   
     /**
-     * This is isSquare method which returns true or false value according to the length and width.
+     * El metodo isSquare devuelve verdadero o falso de acuerdo a length y width
+     * @return 
      */
     public boolean  isSquare()
     {

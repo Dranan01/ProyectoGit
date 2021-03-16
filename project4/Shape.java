@@ -2,9 +2,9 @@
 import java.io.PrintWriter;
 
 /**
- * This Shape class represent area and perimeter.
+ * La clase Shape usa los metodos area y perimetro.
  * @author Pratik Patel
- * @version 1  Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 
 abstract class Shape {
@@ -14,8 +14,8 @@ abstract class Shape {
    }
    
    /**
-    * It gets the value of area.
-    * @return the value 0.
+    * Devuelve el valor del area
+    * @return valor 0.
    */
    public double getArea()
    {
@@ -24,8 +24,8 @@ abstract class Shape {
    }
    
    /**
-     * It gets the value of Perimeter.
-     * @return the value of 0.
+     * Devuelve el perimetro
+     * @return el valor 0
      */
    public double getPerimeter()
    {

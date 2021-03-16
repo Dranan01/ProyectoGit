@@ -1,18 +1,18 @@
 
 /**
- * This is twoDimensionalShape class which points towards the other classes in hierarchy.
- * it gives perimeter and area of the each shapes.
+ * La clase twoDimensionalShape sera usada en la herencia con otras clases.
+ * Establece los metodos getPerimeter y getArea para las demas formas.
  * 
  * @author Pratik Patel
- * @version 1 Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 
 abstract  class TwoDimensionalShape extends Shape{
     
   
    /**
-     * This method gets the perimeter.
-     * @returns the value 0.
+     * Este metodo devuelve el perimetro
+     * @returns el valor 0
      */ 
    public double getPerimeter()
    {
@@ -20,8 +20,8 @@ abstract  class TwoDimensionalShape extends Shape{
    }
     
    /**
-     * This method gets the area.
-     * @returns the value 0.
+     * Este metodo devuelve el area
+     * @returns el valor 0
      */
    public double getArea()
    {

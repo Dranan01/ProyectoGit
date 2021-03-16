@@ -2,23 +2,28 @@
 import java.io.PrintWriter;
 
 /**
- * This is a Cylinder class which is a ThreeDimensionalShape.
- * it is represented by its radius and height.
+ *Clase Cylinder que representa un cilindro tridimensional 
+ * Se le representa usando radius y height
  * 
  * @author Pratik Patel
- * @version 1 Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 
 class Cylinder extends ThreeDimensionalShape{
-    //instance variable radius and height 
+    /**
+     * creacion de los atributos radius y height
+     */
     double radius , height;
 
+    /**
+     * Constructor vacio de Cylinder
+     */
     public Cylinder() {
     }
 
     
     /**
-     * This is a default constructor which takes radius and height. 
+     * Constructor predeterminado de cilindro que toma radius y height por parametros
      */
     public Cylinder(double radius, double height) 
     {
@@ -29,7 +34,7 @@ class Cylinder extends ThreeDimensionalShape{
     
    
     /**
-     * This constructor is also carries radius and height.
+     * Constructor copia
      */
     public Cylinder(Cylinder cyl)
     {
@@ -39,8 +44,8 @@ class Cylinder extends ThreeDimensionalShape{
 
     
     /**
-     * It gets the value of radius.
-     * @return the value of radius.
+     * Devuelve el valor de radius.
+     * @return el valor de radius.
      */
     public double getRadius() 
     {
@@ -48,9 +53,10 @@ class Cylinder extends ThreeDimensionalShape{
     }
 
     
-    /**
-     * It sets the value of height.
-     */
+   /**
+    * Establece el valor de radius
+    * @param radius 
+    */
     public void setRadius(double radius) 
     {
         this.radius = radius;
@@ -58,8 +64,8 @@ class Cylinder extends ThreeDimensionalShape{
 
     
     /**
-     * It gets the value of height.
-     * @return the value of height.
+     * Devuelve el valor de height.
+     * @return el valor de height.
      */
     public double getHeight() 
     {
@@ -68,7 +74,8 @@ class Cylinder extends ThreeDimensionalShape{
 
     
     /**
-     * It sets the value of height.
+     * Establece el valor de height
+     * @param height 
      */
     public void setHeight(double height) 
     {
@@ -78,7 +85,8 @@ class Cylinder extends ThreeDimensionalShape{
     
     
     /**
-     * This is an overridden method which gets the surface area.
+     * Metodo sobreescrito que devuelve el valor de la area
+     * @return 
      */
     @Override
     public double getSurfaceArea() 
@@ -90,7 +98,8 @@ class Cylinder extends ThreeDimensionalShape{
     
     
     /**
-     * This is an overridden method which gets the volume.
+     * Metodo sobreescrito que devuelve el volumen
+     * @return el volumen
      */
     @Override
     public double getVolume() 
@@ -102,7 +111,8 @@ class Cylinder extends ThreeDimensionalShape{
     
     
     /**
-     * This is a printwriteout overridden method which prints the Cylinder object.
+     * Metodo sobreescrito que usa un PrintWriter para imprimir el objeto Cylinder
+     * @param out 
      */
     @Override
     public void print(PrintWriter out) 

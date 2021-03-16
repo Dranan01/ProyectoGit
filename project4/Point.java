@@ -2,21 +2,21 @@
 import java.io.PrintWriter;
 
 /**
- *  A point class is represented as a pair of Cartesian coordinates.
- *  This class is not a part of Hieraecy but is going to be used by ohter classes.
- *  point x and y coordinates in the system. 
+ * Es una clase Point representada por un par de coordenadas cartesianas.
+ * Esta clase no es parte de la herencia pero va a ser usada en las otras clases
+ * Usa X e Y como coordenadas en el sistema. 
  *  
  * @author  Pratik Patel 
- * @version 1  Date 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 class Point 
 {
-    // Instance Variables x and y representing coordinates which are double.
+    // Crea las variables X e Y que representan coordenadas como tipo double.
     private double x ;
     private double y;
 
     /**
-     * The default constructor which sets the x and the y coordinates. 
+     * El constructor por defecto que establece las coordenadas X e Y. 
      */
     public Point() 
     {
@@ -26,7 +26,7 @@ class Point
 
     
     /**
-     * This is a constructor which takes two doubles and initializes x and the y.
+     * Constructor que inicializa X e Y por parametros.
      */
     public Point(double x, double y) 
     {
@@ -36,8 +36,7 @@ class Point
     
     
      /**
-     * This constructor takes a Point object as parameter.
-     * It creates a new Point object.
+     * Constructor copia de Point.
      */
     public Point(Point pnt)
     {
@@ -47,8 +46,8 @@ class Point
     
    
      /**
-     * It gets a value of x. 
-     * @return the value of y.
+     * Devuelve el valor de X 
+     * @return el valor de X
      */
     public double getX() 
     {
@@ -57,7 +56,7 @@ class Point
     
     
      /**
-     * Sets a value of x.
+     * Establece el valor de X
      */
     public void setX(double x) 
     {
@@ -66,8 +65,8 @@ class Point
     
     
     /**
-     * It gets a value of y. 
-     * @return the value of y.
+     * Devuelve el valor de Y 
+     * @return el valor de Y
      */
     public double getY() 
     {
@@ -76,7 +75,7 @@ class Point
     
     
      /**
-     * Sets a value of y.
+     * Establece el valor de Y.
      */
     public void setY(double y) 
     {
@@ -85,9 +84,9 @@ class Point
     
     
     /**
-     * This is a distance method which returns the distance between this Point and another point.
-     * it takes point object as its parameter.
-     * through the parameter it calculate the length of line.
+     * El metodo distance devuelve la distancia entre un punto y otro.
+     * Coge un objeto Point como parametro.
+     * A traves del parametro calcula la longitud de la linea.
      */
     public double  distance(Point p)
     {
@@ -97,7 +96,7 @@ class Point
     
     
     /**
-     * This is PrintWriter out method whic prints the point in the x and the y to output file.
+     * Es un metodo PrintWriter que imprime las coordenadas X e Y del punto.
      */
     public void print(PrintWriter out)
     {

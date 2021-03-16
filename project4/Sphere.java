@@ -2,15 +2,17 @@
 import java.io.PrintWriter;
 
 /**
- * The Sphere class is a ThreeDimensionalShape 
- * it represente its radius.
+ * La clase Sphere representa una esfera tridimensional. 
+ * representado por el radio
  * 
  * @author Pratik Patel
- * @version 1 Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 
 public class Sphere extends ThreeDimensionalShape{
-    //instance variable radius.
+    /**
+     * Creacion de la variable raidus.
+     */
     double radius ;
 
     public Sphere() {
@@ -18,7 +20,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     
     /**
-     * The constructor define radius. 
+     * Constructor que toma radius por parametro
      */
     public Sphere(double radius) 
     {
@@ -27,7 +29,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     
     /**
-     * The constructor which calls the constructor defined above. 
+     * Constructor copia. 
      */
     public Sphere(Sphere sp)
     {
@@ -36,8 +38,8 @@ public class Sphere extends ThreeDimensionalShape{
 
     
      /**
-     * It gets the value of radius.
-     * @return the value of radius.
+     * Devuelve el valor de radius
+     * @return el valor de radius.
      */
     public double getRadius() 
     {
@@ -47,7 +49,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     
     /**
-     * It sets the value of radius.
+     * Establece el valor de radius.
      */
     public void setRadius(double radius) 
     {
@@ -56,7 +58,8 @@ public class Sphere extends ThreeDimensionalShape{
 
     
     /**
-     * This is an overridden method which gets the surface area.
+     * Metodo sobreescrito que devuelve el valor del area
+     * @return el valor del area
      */
     @Override
     public double getSurfaceArea() 
@@ -68,7 +71,8 @@ public class Sphere extends ThreeDimensionalShape{
 
     
     /**
-     * This is an overridden method which gets the volume.
+     * Metodo sobreescrito que devuelve el valor del volumen.
+     * @return 
      */
     @Override
     public double getVolume() 
@@ -78,7 +82,8 @@ public class Sphere extends ThreeDimensionalShape{
 
     
     /**
-     * This is a printwriteout overridden method which prints the Sphere object.
+     * Metodo sobreescrito que usa PrintWriter para mostrar el objeto Sphere
+     * @param out 
      */
     @Override
     public void print(PrintWriter out)

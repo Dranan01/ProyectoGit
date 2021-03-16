@@ -2,26 +2,29 @@
 import java.io.PrintWriter;
 
 /**
- * This is a Cone class which is a ThreeDimensionalShape.
- * It representes the radius and height.
+ * Es una clase Cone que representa una cono tridimensional.
+ * representa el radio y la altura
  * 
  * @author Pratik Patel
- * @version 1  Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  * 
  */
 
  class Cone extends ThreeDimensionalShape{
-    //instance variable radius and height.
+    /**
+     * Crea las variables radius y height
+     */
     double radius;
     double height;
 
+    //Constructor vacio
     public Cone() 
     {
     }
 
     
     /**
-     * The default constructor which takes radius and height. 
+     * Constructor de cono que toma por parametros radius y height 
      */
     public Cone(double radius, double height) 
     {
@@ -31,7 +34,7 @@ import java.io.PrintWriter;
      
     
     /**
-     * This constructor is also carries radius and height.
+     * Constructor copia de cono
      */ 
     public Cone(Cone con)
     {
@@ -42,8 +45,8 @@ import java.io.PrintWriter;
     
   
     /**
-     * It gets the value of radius.
-     * @return the value of radius.
+     * Devuelve el valor de radius
+     * @return el valor de radius
      */
     public double getRadius() 
     {
@@ -53,7 +56,8 @@ import java.io.PrintWriter;
     
     
     /**
-     * It sets the value of height.
+     * Establece el valor de radius
+     * @param radius 
      */
     public void setRadius(double radius) 
     {
@@ -63,8 +67,8 @@ import java.io.PrintWriter;
     
     
     /**
-     * It gets the value of height.
-     * @return the value of height.
+     * Devuelve el valor de height.
+     * @return el valor de height.
      */
     public double getHeight() 
     {
@@ -74,7 +78,8 @@ import java.io.PrintWriter;
     
     
     /**
-     * It sets the value of height.
+     * Establece el valor de height
+     * @param height 
      */
     public void setHeight(double height) 
     {
@@ -84,7 +89,8 @@ import java.io.PrintWriter;
     
     
     /**
-     * This is an overridden method which gets the surface area.
+     * Metodo sobreescrito que devuelve el valor del area
+     * @return el area de la superficie
      */
     @Override
     public double getSurfaceArea() 
@@ -95,7 +101,8 @@ import java.io.PrintWriter;
 
     
     /**
-     * This is an overridden method which gets the volume.
+     * Metodo sobreescrito que devuelve el volumen
+     * @return el volumen
      */
     @Override
     public double getVolume() 
@@ -107,8 +114,10 @@ import java.io.PrintWriter;
 
     
     
+
     /**
-     * This is a printwriteout overridden method which prints the Cone object.
+     * Metodo sobreescrito que usa un PrintWriter para imprimir el objeto Cono
+     * @param out 
      */
     @Override
     public void print(PrintWriter out) 

@@ -1,17 +1,17 @@
 
 /**
- * This is threeDimensionalShape class which points towards the other classes in hierarchy.
- * it gives surface area and volume to those classes.
+ * La clase threeDimensionalShape se usara en la jerarquia.
+ * Establece los metodos getSurfaceArea y getVolume de las otras clases.
  * 
  * @author Pratik Patel
- * @version 1 Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 
 abstract class ThreeDimensionalShape extends Shape{
  
     /**
-     * This method gets the surface area.
-     * @returns the value 0.
+     * Este metodo devuelve el area
+     * @returns el valor 0.
      */
     public double getSurfaceArea()
     {
@@ -20,8 +20,8 @@ abstract class ThreeDimensionalShape extends Shape{
     
     
     /**
-     * This method gets the volume.
-     * @returns the value 0.
+     * Este metodo devuelve el volumen
+     * @returns el valor 0.
      */
     public double getVolume()
     {

@@ -1,11 +1,11 @@
 
 import java.io.PrintWriter;
 /**
- * This is a circle class which is representing radius and center of circle. 
- * The center is a Point object.
+ * Es una clase circulo que representa el radio y el centro de un circulo. 
+ * el centro es un objeto point
  * 
- * @author  Pratik Patel
- * @version 1 Date: 04/27/2014
+ * @author Pratik Patel
+ * @version 2  Date: 16/03/2021
  */
 
 public class Circle  extends TwoDimensionalShape{

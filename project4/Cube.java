@@ -2,23 +2,28 @@
 import java.io.PrintWriter;
 
 /**
- * This is a cube class which is a ThreeDimensionalShape 
- * it is represented by its side length.
+ * Esta es la clase Cube que representa un cubo tridimensional 
+ * Es representado mediante la longitud de sus lados.
  * 
  * @author Pratik Patel
- * @version 1  Date: 04/27/2014
+ * @version 2  Date: 16/03/2021
  */
 
  class Cube extends ThreeDimensionalShape{
-    //instance variable length which is double.
+    /**
+     * Crea la variable length
+     */
      double length;
 
+     /**
+      * Constructor vacio de cubo
+      */
     public Cube() {
     }
 
     
     /**
-     * The default constructor which defines a length. 
+     * Constructor predeterminado de cubo que toma length por parametro
      */
     public Cube(double length) 
     {
@@ -27,7 +32,7 @@ import java.io.PrintWriter;
      
      
     /**
-     * This constructor is pointing to the above constructor. 
+     * Constructor copia de cubo 
      */
     public Cube(Cube cube)
     {
@@ -36,8 +41,8 @@ import java.io.PrintWriter;
 
    
     /**
-     * It gets the value of length.
-     * @return the value of length.
+     * Devuelve el valor de length
+     * @return el valor de length.
      */
     public double getLength() 
     {
@@ -46,7 +51,8 @@ import java.io.PrintWriter;
 
     
     /**
-     * It sets the value of length.
+     * Establece el valor de length
+     * @param length 
      */
     public void setSideLength(double length) 
     {
@@ -55,8 +61,10 @@ import java.io.PrintWriter;
 
     
     
+   
     /**
-     * This is an overridden method which gets the surface area.
+     * Metodo sobreescrito que devuelve el area
+     * @return area del cubo
      */
     @Override
     public double getSurfaceArea() 
@@ -66,8 +74,10 @@ import java.io.PrintWriter;
 
     
     
+    
     /**
-     * This is an overridden method which gets the volume.
+     * Metodo sobreescrito que devuelve el volumen
+     * @return el volumen
      */
     @Override
     public double getVolume() 
@@ -76,8 +86,10 @@ import java.io.PrintWriter;
     }
 
     
+    
     /**
-     * This is a printwriteout overridden method which prints the Cube object.
+     * Metodo sobreescrito que usa PrintWriter como parametro para imprimir el objeto cubo
+     * @param out 
      */
     @Override
     public void print(PrintWriter out) 
