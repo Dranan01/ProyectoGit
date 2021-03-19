@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 import java.io.PrintWriter;
 
@@ -27,6 +29,8 @@ class Point
     
     /**
      * Constructor que inicializa X e Y por parametros.
+     * @param x valor de X
+     * @param y valor de Y
      */
     public Point(double x, double y) 
     {
@@ -36,8 +40,9 @@ class Point
     
     
      /**
-     * Constructor copia de Point.
-     */
+      * Constructor copia de Point.
+      * @param pnt Punto
+      */
     public Point(Point pnt)
     {
         this.x = pnt.x;
@@ -56,8 +61,9 @@ class Point
     
     
      /**
-     * Establece el valor de X
-     */
+      * Establece el valor de X
+      * @param x valor de X
+      */
     public void setX(double x) 
     {
         this.x = x;
@@ -75,8 +81,9 @@ class Point
     
     
      /**
-     * Establece el valor de Y.
-     */
+      * Establece el valor de Y.
+      * @param y valor de Y
+      */
     public void setY(double y) 
     {
         this.y = y;
@@ -87,6 +94,8 @@ class Point
      * El metodo distance devuelve la distancia entre un punto y otro.
      * Coge un objeto Point como parametro.
      * A traves del parametro calcula la longitud de la linea.
+     * @param p Punto
+     * @return valor de la distancia
      */
     public double  distance(Point p)
     {
@@ -97,6 +106,7 @@ class Point
     
     /**
      * Es un metodo PrintWriter que imprime las coordenadas X e Y del punto.
+     * @param out imprime en carpeta externa
      */
     public void print(PrintWriter out)
     {

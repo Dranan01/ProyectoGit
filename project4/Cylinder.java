@@ -1,8 +1,10 @@
+package com.mycompany.proyecto_git;
+
 
 import java.io.PrintWriter;
 
 /**
- *Clase Cylinder que representa un cilindro tridimensional 
+ * Clase Cylinder que representa un cilindro tridimensional 
  * Se le representa usando radius y height
  * 
  * @author Pratik Patel
@@ -24,6 +26,8 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Constructor predeterminado de cilindro que toma radius y height por parametros
+     * @param radius valor del radio
+     * @param height valor de la altura
      */
     public Cylinder(double radius, double height) 
     {
@@ -34,7 +38,8 @@ class Cylinder extends ThreeDimensionalShape{
     
    
     /**
-     * Constructor copia
+     * Constructor copia de Cylinder
+     * @param cyl cilindro
      */
     public Cylinder(Cylinder cyl)
     {
@@ -55,7 +60,7 @@ class Cylinder extends ThreeDimensionalShape{
     
    /**
     * Establece el valor de radius
-    * @param radius 
+    * @param radius valor del radio
     */
     public void setRadius(double radius) 
     {
@@ -75,7 +80,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Establece el valor de height
-     * @param height 
+     * @param height valor de la altura
      */
     public void setHeight(double height) 
     {
@@ -86,7 +91,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Metodo sobreescrito que devuelve el valor de la area
-     * @return 
+     * @return valor del area
      */
     @Override
     public double getSurfaceArea() 
@@ -112,7 +117,7 @@ class Cylinder extends ThreeDimensionalShape{
     
     /**
      * Metodo sobreescrito que usa un PrintWriter para imprimir el objeto Cylinder
-     * @param out 
+     * @param out imprime en archivo externo
      */
     @Override
     public void print(PrintWriter out) 

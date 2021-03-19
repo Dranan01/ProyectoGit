@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 import java.io.PrintWriter;
 
@@ -25,9 +27,9 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Constructor predeterminado que tomar por parametro 3 Points.
-     * @param pt1
-     * @param py2
-     * @param py3 
+     * @param pt1 variable Point
+     * @param py2 variable Point
+     * @param py3 variable Point
      */
     public Triangle(Point pt1, Point py2, Point py3) 
     {
@@ -40,7 +42,7 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Constructor copia
-     * @param t 
+     * @param t Triangle
      */
     public Triangle(Triangle t) 
     {
@@ -83,7 +85,7 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Establece el valor de point2
-     * @param point2 
+     * @param point2 valor de point2
      */
     public void setPoint2(Point point2) 
     {
@@ -102,7 +104,8 @@ class Triangle extends TwoDimensionalShape {
     }
 
     /**
-     * Establece el valor de point3.
+     *  Establece el valor de point3.
+     * @param point3 valor de point3
      */
     public void setPoint3(Point point3) 
     {
@@ -112,7 +115,7 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Metodo sobreescrito que usa un PrintWriter para imprimir el objeto Cono
-     * @param out 
+     * @param out imprime en archivo externo
      */
     @Override
     public void print(PrintWriter out) 
@@ -130,7 +133,7 @@ class Triangle extends TwoDimensionalShape {
     
     /**
      * Metodo sobreescrito que devuelve el valor del area
-     * @return 
+     * @return valor del area
      */
     @Override
     public double getArea() 
@@ -148,7 +151,8 @@ class Triangle extends TwoDimensionalShape {
     }
 
     /**
-     * This is an overridden method which gets the Perimeter.
+     * Metodo sobreescrito que devuelve el valor del perimetro.
+     * @return el valor del perimetro
      */
     @Override
     public double getPerimeter() 

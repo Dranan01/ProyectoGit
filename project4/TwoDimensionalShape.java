@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 /**
  * La clase twoDimensionalShape sera usada en la herencia con otras clases.
@@ -12,7 +14,7 @@ abstract  class TwoDimensionalShape extends Shape{
   
    /**
      * Este metodo devuelve el perimetro
-     * @returns el valor 0
+     * @return el valor 0
      */ 
    public double getPerimeter()
    {
@@ -21,7 +23,7 @@ abstract  class TwoDimensionalShape extends Shape{
     
    /**
      * Este metodo devuelve el area
-     * @returns el valor 0
+     * @return el valor 0
      */
    public double getArea()
    {

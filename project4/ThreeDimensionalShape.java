@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 /**
  * La clase threeDimensionalShape se usara en la jerarquia.
@@ -11,7 +13,7 @@ abstract class ThreeDimensionalShape extends Shape{
  
     /**
      * Este metodo devuelve el area
-     * @returns el valor 0.
+     * @return el valor 0.
      */
     public double getSurfaceArea()
     {
@@ -21,7 +23,7 @@ abstract class ThreeDimensionalShape extends Shape{
     
     /**
      * Este metodo devuelve el volumen
-     * @returns el valor 0.
+     * @return el valor 0.
      */
     public double getVolume()
     {

@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 /*
  * Copyright (C) 2014 Aparna Mahadev
  *
@@ -16,7 +18,7 @@
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301, USA
  */
 import java.util.ArrayList;
-import java.io.*; // for IOException and PrintWriter
+import java.io.*; // Para la IOException y el printWriter
 import java.util.Scanner;
 
 /**
@@ -25,6 +27,10 @@ import java.util.Scanner;
  */
 
 public class Project4 {
+    /**
+     * Aplicacion
+     * @param args aplicacion 
+     */
     public static void main(String args[]) {
         try {
             PrintWriter out = new PrintWriter (new FileWriter(args[0]));

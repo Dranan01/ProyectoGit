@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 import java.io.PrintWriter;
 
@@ -24,6 +26,7 @@ import java.io.PrintWriter;
     
     /**
      * Constructor predeterminado de cubo que toma length por parametro
+     * @param length valor de la longitud
      */
     public Cube(double length) 
     {
@@ -32,7 +35,8 @@ import java.io.PrintWriter;
      
      
     /**
-     * Constructor copia de cubo 
+     * Constructor copia de cubo
+     * @param cube Cubo
      */
     public Cube(Cube cube)
     {
@@ -52,7 +56,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de length
-     * @param length 
+     * @param length valor de la longitud 
      */
     public void setSideLength(double length) 
     {
@@ -89,7 +93,7 @@ import java.io.PrintWriter;
     
     /**
      * Metodo sobreescrito que usa PrintWriter como parametro para imprimir el objeto cubo
-     * @param out 
+     * @param out imprime en carpeta externa
      */
     @Override
     public void print(PrintWriter out) 

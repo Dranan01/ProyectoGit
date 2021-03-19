@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 import java.io.PrintWriter;
 /**
@@ -17,8 +19,8 @@ public class Circle  extends TwoDimensionalShape{
 
     /**
      * Constructor de circulo que toma por argumento un Point y un double
-     * @param center
-     * @param radius 
+     * @param center centro del circulo
+     * @param radius radio del circulo
      */
     public Circle( Point center,double radius) 
     {
@@ -29,6 +31,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Constructor copia
+     * @param circle Circulo
      */
     public Circle(Circle circle)
     {
@@ -50,6 +53,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Le da un valor a radius
+     * @param radius valor del racio
      */
     public void setRadius(double radius) 
     {
@@ -70,7 +74,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Guarda el valor de center.
-     * @param center 
+     * @param center valor del centro
      */
     public void setCenter(Point center) 
     {
@@ -81,7 +85,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Metodo Override que imprime los atribus del objeto circulo
-     * @param out 
+     * @param out impresion en archivo externo
      */
     @Override
     public void print(PrintWriter out) 
@@ -98,7 +102,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Metodo Override que devuelve el area.
-     * @return 
+     * @return valor del area
      */
     @Override
     public double getArea() 
@@ -109,7 +113,7 @@ public class Circle  extends TwoDimensionalShape{
     
     /**
      * Metodo Overrida que devuelve el radio.
-     * @return 
+     * @return valor del perimetro
      */
     @Override
     public double getPerimeter() {

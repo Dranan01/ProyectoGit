@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 import java.io.PrintWriter;
 
@@ -14,13 +16,17 @@ public class Sphere extends ThreeDimensionalShape{
      * Creacion de la variable raidus.
      */
     double radius ;
-
+    
+    /**
+     * 
+     */
     public Sphere() {
     }
     
     
     /**
      * Constructor que toma radius por parametro
+     * @param radius valor del radio 
      */
     public Sphere(double radius) 
     {
@@ -29,7 +35,8 @@ public class Sphere extends ThreeDimensionalShape{
     
     
     /**
-     * Constructor copia. 
+     * Constructor copia.
+     * @param sp esfera
      */
     public Sphere(Sphere sp)
     {
@@ -50,6 +57,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * Establece el valor de radius.
+     * @param radius valor del radio
      */
     public void setRadius(double radius) 
     {
@@ -72,7 +80,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * Metodo sobreescrito que devuelve el valor del volumen.
-     * @return 
+     * @return el valor del volumen
      */
     @Override
     public double getVolume() 
@@ -83,7 +91,7 @@ public class Sphere extends ThreeDimensionalShape{
     
     /**
      * Metodo sobreescrito que usa PrintWriter para mostrar el objeto Sphere
-     * @param out 
+     * @param out imprime en archivo externo
      */
     @Override
     public void print(PrintWriter out)

@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 import java.io.PrintWriter;
 
@@ -7,7 +9,6 @@ import java.io.PrintWriter;
  * 
  * @author Pratik Patel
  * @version 2  Date: 16/03/2021
- * 
  */
 
  class Cone extends ThreeDimensionalShape{
@@ -25,6 +26,8 @@ import java.io.PrintWriter;
     
     /**
      * Constructor de cono que toma por parametros radius y height 
+     * @param radius valor del radio
+     * @param height valor de la altura
      */
     public Cone(double radius, double height) 
     {
@@ -35,6 +38,7 @@ import java.io.PrintWriter;
     
     /**
      * Constructor copia de cono
+     * @param con Cone
      */ 
     public Cone(Cone con)
     {
@@ -57,7 +61,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de radius
-     * @param radius 
+     * @param radius valor de radio
      */
     public void setRadius(double radius) 
     {
@@ -68,7 +72,7 @@ import java.io.PrintWriter;
     
     /**
      * Devuelve el valor de height.
-     * @return el valor de height.
+     * @return el valor de altura.
      */
     public double getHeight() 
     {
@@ -79,7 +83,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de height
-     * @param height 
+     * @param height valor de altura 
      */
     public void setHeight(double height) 
     {
@@ -117,7 +121,7 @@ import java.io.PrintWriter;
 
     /**
      * Metodo sobreescrito que usa un PrintWriter para imprimir el objeto Cono
-     * @param out 
+     * @param out imprime en carpeta externa
      */
     @Override
     public void print(PrintWriter out) 
