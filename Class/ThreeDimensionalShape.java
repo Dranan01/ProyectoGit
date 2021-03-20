@@ -9,7 +9,7 @@ package com.mycompany.proyecto_git;
  * @version 2  Date: 16/03/2021
  */
 
-abstract class ThreeDimensionalShape extends Shape{
+public abstract class ThreeDimensionalShape extends Shape{
  
     /**
      * Este metodo devuelve el area

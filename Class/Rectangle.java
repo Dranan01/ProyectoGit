@@ -1,3 +1,5 @@
+package com.mycompany.proyecto_git;
+
 
 import java.io.PrintWriter;
 /**
@@ -7,7 +9,7 @@ import java.io.PrintWriter;
  * @version 2  Date: 16/03/2021
  */
 
- class Rectangle  extends TwoDimensionalShape{
+ public class Rectangle  extends TwoDimensionalShape{
 
      /**
       * Creacion de las variables length y width
@@ -25,8 +27,8 @@ import java.io.PrintWriter;
     
     /**
      * Constrcutor predeterminado de Rectangle que toma length y width por parametros
-     * @param length
-     * @param width 
+     * @param length valor de la longitud
+     * @param width valor del ancho
      */
     public Rectangle(double length, double width)
     {
@@ -37,6 +39,7 @@ import java.io.PrintWriter;
      
     /**
      * Constructor copia de Rectangle
+     * @param rect Rectangulo
      */
     public Rectangle(Rectangle rect)
     {
@@ -58,6 +61,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de length.
+     * @param length valor de la longitud
      */
     public void setHeight(double length) 
     {
@@ -78,6 +82,7 @@ import java.io.PrintWriter;
     
     /**
      * Establece el valor de width.
+     * @param width valor de la anchura 
      */
     public void setWidth(double width) 
     {
@@ -89,7 +94,7 @@ import java.io.PrintWriter;
     
     /**
      * Metodo sobreescrito que usa PrintWriter para mostrar el objeto Rectangle
-     * @param out 
+     * @param out imprime en archivo externo
      */
     @Override
     public void print(PrintWriter out) 
@@ -107,7 +112,7 @@ import java.io.PrintWriter;
     
     /**
      * Metodo sobreescrito que devuelve el valor del area
-     * @return 
+     * @return valor del area
      */
     @Override
     public double getArea() 
@@ -120,7 +125,7 @@ import java.io.PrintWriter;
     
     /**
      * Metodo sobreescrito que devuelve el valor del perimetro
-     * @return 
+     * @return valor del perimetro
      */
     @Override
     public double getPerimeter() 
@@ -133,7 +138,7 @@ import java.io.PrintWriter;
    
     /**
      * El metodo isSquare devuelve verdadero o falso de acuerdo a length y width
-     * @return 
+     * @return booleano isSquare
      */
     public boolean  isSquare()
     {

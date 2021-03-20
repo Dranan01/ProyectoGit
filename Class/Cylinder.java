@@ -11,7 +11,7 @@ import java.io.PrintWriter;
  * @version 2  Date: 16/03/2021
  */
 
-class Cylinder extends ThreeDimensionalShape{
+public class Cylinder extends ThreeDimensionalShape{
     /**
      * creacion de los atributos radius y height
      */

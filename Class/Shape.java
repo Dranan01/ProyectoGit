@@ -10,7 +10,7 @@ import java.io.PrintWriter;
  * @version 2  Date: 16/03/2021
  */
 
-abstract class Shape {
+public abstract class Shape {
     
     /**
      * Metodo vacio para la herencia

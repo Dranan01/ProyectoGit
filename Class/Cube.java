@@ -11,7 +11,7 @@ import java.io.PrintWriter;
  * @version 2  Date: 16/03/2021
  */
 
- class Cube extends ThreeDimensionalShape{
+ public class Cube extends ThreeDimensionalShape{
     /**
      * Crea la variable length
      */

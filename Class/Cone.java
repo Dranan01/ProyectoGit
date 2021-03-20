@@ -11,7 +11,7 @@ import java.io.PrintWriter;
  * @version 2  Date: 16/03/2021
  */
 
- class Cone extends ThreeDimensionalShape{
+ public class Cone extends ThreeDimensionalShape{
     /**
      * Crea las variables radius y height
      */

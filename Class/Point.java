@@ -11,7 +11,7 @@ import java.io.PrintWriter;
  * @author  Pratik Patel 
  * @version 2  Date: 16/03/2021
  */
-class Point 
+public class Point 
 {
     // Crea las variables X e Y que representan coordenadas como tipo double.
     private double x ;
