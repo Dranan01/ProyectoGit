@@ -1,5 +1,4 @@
-<<<<<<< HEAD:Class/Circle.java
-package com.mycompany.proyecto_git;
+
 
 
 import java.io.PrintWriter;
