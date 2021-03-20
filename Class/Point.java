@@ -1,4 +1,3 @@
-package com.mycompany.proyecto_git;
 
 
 import java.io.PrintWriter;

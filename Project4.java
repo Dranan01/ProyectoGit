@@ -1,4 +1,4 @@
-package com.mycompany.proyecto_git;
+
 
 /*
  * Copyright (C) 2014 Aparna Mahadev
